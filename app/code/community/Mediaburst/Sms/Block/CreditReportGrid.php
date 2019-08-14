@@ -50,14 +50,13 @@ class Mediaburst_Sms_Block_CreditReportGrid extends Mage_Adminhtml_Block_Widget_
         $stores = Mage::app()->getStores();
         foreach ($stores as $store) {
             if ($helper->isActive($store)) {
-                $username = $helper->getUsername($store);
-                $password = $helper->getPassword($store);
+                $key      = $helper->getKey($store);
                 $url      = $helper->getCheckUrl($store);
-                $hash     = md5($username . ':' . $password . ':' . $url);
+                $hash     = md5($key . ':' . $url);
 
                 if (!isset($runs[$hash])) {
                     $runs[$hash] = array(
-                        'username' => $username,
+                        'key'      => $key,
                         'url'      => $url,
                         'stores'   => array()
                     );
@@ -77,7 +76,7 @@ class Mediaburst_Sms_Block_CreditReportGrid extends Mage_Adminhtml_Block_Widget_
             $credits = $api->checkCredits();
 
             $item = new Varien_Object();
-            $item->setUsername($run['username']);
+            $item->setKey($run['key']);
             $item->setUrl($run['url']);
             $item->setCredits($credits);
 
@@ -91,10 +90,10 @@ class Mediaburst_Sms_Block_CreditReportGrid extends Mage_Adminhtml_Block_Widget_
     protected function _prepareColumns()
     {
         $this->addColumn(
-            'username',
+            'key',
             array(
-                 'header' => $this->__('Username'),
-                 'index'  => 'username',
+                 'header' => $this->__('Key'),
+                 'index'  => 'key',
                  'filter' => false,
             )
         );
