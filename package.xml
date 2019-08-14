@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mediaburst_SMS</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Send order status and shipping text messages automatically.</summary>
+    <description>&lt;p&gt;The Mediaburst SMS add-on enables Magento to send text messages to you and your customers whenever an order status changes.&lt;/p&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Your website can send you a text when somebody places an order.&lt;/li&gt;&#xD;
+&lt;li&gt;Send you customer a text when you ship their order&lt;/li&gt;&#xD;
+&lt;li&gt;Notify your customer if shipping is delayed.&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;p&gt;To use the plugin you need to sign up for a &lt;a href="http://www.mediaburst.co.uk/api/?utm_source=plugin&amp;utm_medium=magento&amp;utm_campaign=mediaburst-sms"&gt;Mediaburst SMS API&lt;/a&gt; account. Mediaburst SMS API is a premium service using network connected SMS routes (it doesnt use the free email to SMS routes). This means you can deliver text messages to over 400 networks in over 150 countries around the world with high throughput and super fast delivery.&lt;/p&gt;&#xD;
+&lt;p&gt;The price for a Mediaburst API account is 5p per text message irrespective of which country you are sending to.&lt;/p&gt;</description>
+    <notes>Full compatibility up to Magento 1.7.0.2. Includes support for using Clockwork SMS "API keys" instead of old Mediaburst usernames and passwords.</notes>
+    <authors><author><name>Mediaburst</name><user>mediaburst</user><email>hello@mediaburst.co.uk</email></author></authors>
+    <date>2012-07-31</date>
+    <time>15:50:16</time>
+    <contents><target name="magecommunity"><dir name="Mediaburst"><dir name="Sms"><dir name="Block"><file name="AbstractMessageGrid.php" hash="3dda9946cab8411c8d208ff3256fad6f"/><file name="CreditReportGrid.php" hash="368fee227195e826c4904b7bd0bf7059"/><file name="FailedGrid.php" hash="0f8a829ebe78fc126c119ec62f0f113a"/><file name="GridContainer.php" hash="e9db6ad67f86c00f27cf4fada82ab548"/><file name="PendingGrid.php" hash="2b9e917935b90368a1d63177e2cd4144"/><file name="SentGrid.php" hash="6f90c105b11bcfbd994a694f1a6b9ff7"/></dir><file name="Exception.php" hash="a61b41609348442384c156505bbf04bd"/><dir name="Helper"><file name="Data.php" hash="baca1d6b02854389aeace4649bdd4c88"/></dir><dir name="Model"><file name="Api.php" hash="01743920ea9fba6ef64fafbd0dff34bc"/><file name="ApiConfig.php" hash="ae879ffad94b23440e680bddd6a32c90"/><file name="Message.php" hash="7cba80e49c7540dfbdcf23db29c52f59"/><dir name="Mysql4"><dir name="Message"><file name="Collection.php" hash="58de36b5fde44f9a8497f2f791c45108"/></dir><file name="Message.php" hash="0798cc84eca49393941451e30ab018f8"/></dir><file name="Observer.php" hash="b00fd33176b8e0699a9c46275325d18f"/></dir><dir name="controllers"><dir name="Mediaburst"><file name="SmsController.php" hash="c40d0f548ddcae0cbe7c9c5a93f4f970"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="67fe2c04b60cfa6266a17d9a0525127b"/><file name="config.xml" hash="97aeca64c798b671be71ec6249e9aa75"/><file name="system.xml" hash="270cf0510fe6c0631a82b0d6d542190f"/></dir><dir name="sql"><dir name="Mediaburst_Sms"><file name="mysql4-install-1.0.0.php" hash="4d2862d3ab72dd8db342f126f27502b3"/><file name="mysql4-upgrade-1.0.0-1.1.2.php" hash="f82c128da5ea76c7f7a058d54cdb29b5"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="mediaburst"><file name="sms.xml" hash="f4b1cc340f2ae675615a73d33be7cc46"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="MediaBurst_Sms.xml" hash="10128b20049e52b96613d7f54148e54b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
