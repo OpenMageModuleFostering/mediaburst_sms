@@ -1,7 +1,7 @@
 {
     "name": "OpenMageModuleFostering/Mediaburst_SMS",
     "type": "magento-module",
-    "license": "BSD-License",
+    "license": "ISC",
     "homepage": "",
     "description": "Send order status and shipping text messages automatically.",
     "authors": [
