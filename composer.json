@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Mediaburst_SMS",
+    "name": "OpenMageModuleFostering\/Mediaburst_SMS",
     "type": "magento-module",
     "license": "ISC",
     "homepage": "",
     "description": "Send order status and shipping text messages automatically.",
     "authors": [
-    {
-        "name": "Mediaburst",
-        "email": "hello@mediaburst.co.uk"
-    }
-],
+        {
+            "name": "Mediaburst",
+            "email": "hello@mediaburst.co.uk"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
